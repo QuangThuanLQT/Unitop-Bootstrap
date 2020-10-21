@@ -23,6 +23,7 @@ body {
     background: #000000;
     color: #ffffff;
 }
+
 /* ==top-header== */
 #top-header{
     border-bottom: 1px solid #363636;   
@@ -32,6 +33,7 @@ body {
     color: #c4463f;
     cursor: pointer;
 }
+
 /* ==bottom-header== */
 #bottom-header a.logo{
     border: 1px solid #ba9164;
@@ -69,13 +71,14 @@ body {
     transition: .25s;
 }
 
-#bottom-header #main-nav ul.navbar-nav li.nav-item:hover ul.show{
+#bottom-header #main-nav ul.navbar-nav li.nav-item ul.show{
     /* display: block;
     top: 95%;
 	transition: top 0.25s; */
 	visibility: visible;
 	opacity: 1;
 }
+
 /* === */
 #bottom-header #main-nav ul.navbar-nav li.nav-item #dropdown a.name-p{
     color: #ffff;
@@ -121,7 +124,7 @@ body {
 	opacity: 1;
 }
 
-
+/* ===responsive #dropdown */
 #dropdown.respon {
 	width: 70%!important;
 	height: 400px;
@@ -146,16 +149,14 @@ body {
 #bottom-header .icons a.icon-btn b.number-cart{
 	display: inline-block;
 	position: absolute;
-	background-color: #e3e3e3;
-    color: #000;
+	background-color: #F44336;
+    color: #ffffff;
     padding: 2px 6px;
     border-radius: 50%;
     font-size: 0.6rem;
     top: -4px;
     right: 0;
-    
 }
-
 /* === */
 #bottom-header a:hover{
     color: #c4463f !important;
@@ -181,7 +182,7 @@ body {
     height: 250px;
     padding: 10px;
     font-size: 1.125rem;
-    top: 27%;
+    top: 10%;
     left: 17%;
 }
 
@@ -258,7 +259,17 @@ body {
 /* ----- */
 .p-item .p-img {
     overflow: hidden;
+}
 
+.p-item .p-img .buy-now{
+	opacity: 0.8;
+    z-index: 100;
+    bottom: -40px;
+}
+
+.p-item:hover .p-img .buy-now{
+	bottom: 0;
+	transition: bottom 0.5s;
 }
 
 .p-item .p-info {
@@ -302,7 +313,7 @@ body {
 }
 
 .p-item:hover .p-img img {
-	transform: scale(1.05, 1.05);
+	transform: scale(1.2, 1.2);
 	transition: transform .5s;
 }
 
@@ -322,9 +333,25 @@ body {
 	right: 30px;
 }
 
+#category .cate-info-2 {
+	top: 20px;
+	right: 15px;
+}
+
+#category .cate-info-3 {
+	bottom: 10px;
+	right: 15px;
+}
+
 #category .cate-info h2.name {
 	color: #343434;
 	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+#category .cate-info h2.name-1 {
+	color: #383535;
+	font-size: 0.5rem;
 	margin-bottom: 20px;
 }
 
@@ -363,6 +390,8 @@ body {
 } */
 
 button.owl-prev, button.owl-next{
+	outline: none !important;
+	border: none !important;
 	width: 27px;
     height: 27px;
     background-color: #343434 !important;
@@ -457,13 +486,6 @@ button.owl-prev:hover, button.owl-next:hover{
 	opacity: .5;
 }
 
-/*===== WP MASK =====*/
-/* #wp-mask.show {
-	top: 10px;
-	left: 0;
-	background: #000;
-	opacity: .6;
-} */
 /*===== BACKTOP =====*/
 #backtop {
 	top: 80%;
