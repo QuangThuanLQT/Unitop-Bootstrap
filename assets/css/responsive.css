@@ -23,10 +23,23 @@
         top: 0px;
         left: -76px;
     }
+
+    #bottom-header #main-nav ul.navbar-nav li.nav-item ul.show,
+    #bottom-header #main-nav ul.navbar-nav li.nav-item #dropdown.show{
+        visibility: hidden;
+	    opacity: 0;
+    }
+
+    #bottom-header #main-nav ul.navbar-nav li.nav-item ul.show-1,
+    #bottom-header #main-nav ul.navbar-nav li.nav-item #dropdown.show-1{
+	visibility: visible;
+	opacity: 1;
+    }
+
 }
 
-/* @media (min-width: 1200px) {
-  .container {
-    	max-width: 1170px;
-  	}
-} */
+@media (min-width: 1200px) {
+    .container {
+          max-width: 1170px;
+        }
+  }
