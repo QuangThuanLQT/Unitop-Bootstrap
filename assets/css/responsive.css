@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+	button.navbar-toggler{
+        position: absolute;
+        right: 0;
+        top: 6px;
+    }
+   
+    #support{
+        display: none;
+    }
+
+   
+}
+
+@media screen and (max-width: 1000px) {
+	button.navbar-toggler{
+        position: absolute;
+        right: 0;
+        top: 6px;
+    }
+
+    #bottom-header .icons{
+        top: 0px;
+        left: -76px;
+    }
+}
+
+/* @media (min-width: 1200px) {
+  .container {
+    	max-width: 1170px;
+  	}
+} */
